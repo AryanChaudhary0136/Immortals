@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Your Life Through Time</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Are You Immortal?</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div id="app">
+    <h1>Enter Your Birth Year</h1>
+    <input type="number" id="yearInput" placeholder="e.g. 1998">
+    <button onclick="start()">Start</button>
 
-    <!-- STEP 1 : INPUT -->
-    <div id="inputScreen" class="screen active">
-      <h1>Enter Your Birth Year</h1>
-      <input type="number" id="yearInput" placeholder="e.g. 1999" />
-      <button id="startBtn">Start</button>
-    </div>
-
-    <!-- STEP 2 : INCIDENT DISPLAY -->
-    <div id="incidentScreen" class="screen">
-      <div id="text"></div>
-    </div>
-
-    <!-- STEP 3 : FINAL MESSAGE -->
-    <div id="finalScreen" class="screen">
-      <h2>Kahin tum amar toh nahi?</h2>
-      <p>Are you sure you are not immortal?</p>
-    </div>
-
+    <div id="output"></div>
   </div>
 
-  <!-- IMPORTANT: order matters -->
+  <!-- ✅ DATA FIRST -->
   <script src="incidents.js"></script>
+
+  <!-- ✅ LOGIC AFTER -->
   <script src="script.js"></script>
 
 </body>
