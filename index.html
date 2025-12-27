@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Life Through Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- STEP 1 : INPUT -->
+    <div id="inputScreen" class="screen active">
+      <h1>Enter Your Birth Year</h1>
+      <input type="number" id="yearInput" placeholder="e.g. 1999" />
+      <button id="startBtn">Start</button>
+    </div>
+
+    <!-- STEP 2 : INCIDENT DISPLAY -->
+    <div id="incidentScreen" class="screen">
+      <div id="text"></div>
+    </div>
+
+    <!-- STEP 3 : FINAL MESSAGE -->
+    <div id="finalScreen" class="screen">
+      <h2>Kahin tum amar toh nahi?</h2>
+      <p>Are you sure you are not immortal?</p>
+    </div>
+
+  </div>
+
+  <!-- IMPORTANT: order matters -->
+  <script src="incidents.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

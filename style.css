@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Courier New', monospace;
+  height: 100vh;
+  overflow: hidden; /* scroll band */
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  display: none;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+.screen.active {
+  display: block;
+}
+
+input {
+  padding: 12px;
+  font-size: 18px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#text {
+  font-size: 22px;
+  line-height: 1.6;
+  min-height: 100px;
+}
